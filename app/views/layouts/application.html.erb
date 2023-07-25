@@ -8,9 +8,25 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+      <style>
+    /* Inline CSS here */
+
+    .question-block, .answer-block{
+      margin: 10px;
+      border-bottom: 2px solid black;
+      border-left: 10px solid grey;
+      text-align: center;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lightblue;
+    }
+  </style>
   </head>
 
   <body>
+  <h1>STUPID COACHING</h1>
     <%= yield %>
   </body>
 </html>
